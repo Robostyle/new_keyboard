@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "stellar")(type "KiCad")(uri "${KIPRJMOD}/stellar.pretty")(options "")(descr ""))
+  (lib (name "remove_when_done")(type "KiCad")(uri "/Users/robertsuijker/stellar/PCB/Stellarlib.pretty")(options "")(descr ""))
+)
