@@ -1,3 +1,21 @@
+meta:
+  engine: 4.1.0
+
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  angle: 2
+
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1ky
 units:
   # Proxy Spacing Variables
   kx: cx
@@ -75,6 +93,86 @@ outlines:
     - what: rectangle
       where: true
       size: [kx-0.5, ky-0.5]
+
+pcbs.stellar:
+  footprints:
+    choc_hotswap:
+      what: choc
+      where: true
+      params:
+        keycaps: true
+        reverse: false
+        hotswap: true
+        from: "{{column_net}}"
+        to: "{{colrow}}"
+        spread: 1kx
+
+      anchor:
+        rotate: angle
+
+      columns:
+        outer:
+        pinky:
+          key:
+            spread: 1kx + 3
+        ring:
+          key:
+            origin: [-12, -kx]
+            splay: -angle
+            stagger: 8
+        middle:
+          key.stagger: 5
+        index:
+          key.stagger: -6
+        inner:
+          key.stagger: 0
+
+      rows:
+        bottom:
+        home:
+        top:
+        number:
+
+    thumbfan:
+      anchor:
+        ref: matrix_ring_bottom
+        shift: [.5kx, -1.8ky]
+
+      key:
+        padding: 1ky
+        spread: 1kx
+
+      columns:
+        inner.key:
+          spread: kx
+
+        layer.key:
+          spread: kx
+
+        home.key:
+          spread: kx + 4.2
+          rotate: 72
+          width: 1.5kx
+          stagger: 1
+
+        outer.key:
+          spread: kx + 2
+          rotate: 54
+          width: 1.5kx
+          stagger: -10.2
+
+      rows:
+        thumb:
+
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5, ky-0.5]
+    - what: circle
+      operation: stack
+      where: true
+      radius: 1
 
 pcbs.stellar:
   footprints:
