@@ -641,6 +641,10 @@
     [
       "15a913d9-4cdc-4e0f-b236-8cff02b3db20",
       "key-matrix"
+    ],
+    [
+      "70ff6b38-f306-4b13-8b86-6d9821e0a1ee",
+      "key-backlight"
     ]
   ],
   "text_variables": {}
