@@ -350,15 +350,15 @@
 		(uuid "5e9973f7-a7b1-4230-88a0-dd5d733196a4")
 	)
 	(embedded_fonts no)
-	(model "/home/rsuijker/prive/stellar_too/3dmodels/E73-2G4M08S1C.step"
+	(model "/../3dmodels/E73-2G4M08S1C_2.step"
 		(offset
-			(xyz -56 -132 0)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -90)
+			(xyz -90 -0 -0)
 		)
 	)
 )
